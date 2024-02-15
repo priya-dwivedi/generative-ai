@@ -37,12 +37,6 @@ crew_startup = Crew(
     full_output=True
 )
 
-        ## Step 2 - Parse the above output to extract modules. Store the intro in a JSON under Intro.
-        ## Step 3 - Iterate over each module and launch the second crew consisting of 1. Writer, Critic, Rewriter, Quiz Generator
-        ## As each module gets done, store it in the final output JSON
-        ## Step 4 - Call the summarizer of the course. We should pass to it the JSON containing all the course modules. 
-
-
 result = crew_startup.kickoff()
 print("\n\n########################")
 print("## Run Result:")
