@@ -21,15 +21,12 @@ idea_generator_agent = agents.IdeaGeneratorAgent()
 writer_agent = agents.ReportWriterAgent()
 evaluator_agent = agents.ReportEvaluatorAgent()
 
-
 ## Instantiate the tasks
 generate_ideas = tasks.generate_ideas(idea_generator_agent, task_description)
 write_report = tasks.write_report(writer_agent, task_description)
 evaluate_report = tasks.evaluate_report(evaluator_agent, task_description)
 rewrite_report = tasks.rewrite_report(writer_agent, task_description)
 
-
-### Step 1 - Get the course intro and course module output
 crew_startup = Crew(
     agents=[idea_generator_agent, writer_agent, evaluator_agent ],
     tasks=[generate_ideas, write_report, evaluate_report, rewrite_report],
