@@ -1,5 +1,7 @@
 # LLM Model Router 🤖🔀🧠
 
+![LLM Model Router](images/llm-model-router.png)
+
 This Streamlit-powered LLM router seamlessly routes requests between four powerful language models:
 
 * Groq's LLaMA3-70B-8192 🦖
